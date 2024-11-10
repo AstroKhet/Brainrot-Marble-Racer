@@ -2,3 +2,4 @@
 src/
 main.exe
 main.o
+*.dll
