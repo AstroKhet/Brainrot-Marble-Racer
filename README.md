@@ -1,6 +1,6 @@
 # Brainrot Marble Racer
 
-Characters from the popular show *Spongebob Squarepants* race against each other to the finiish line, but are hindered by immovable obstacles. Who will be the first to reach the finis line?
+Characters from the popular show *SpongeBob SquarePants* race against each other to the finish line but are hindered by immovable obstacles. Who will be the first to reach the finish line?
 
 Made with C++ and [SFML](https://www.sfml-dev.org/) 
 
