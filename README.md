@@ -16,6 +16,9 @@ Characters from the popular show *Spongebob Squarepants* race against each other
 - Use the command `make` to create the executable `main.exe`
 - Run the executable with `./main`
 
+## Customize race map
+All the map information is stored within `map.txt`. Between each newline, you should write the *x* and *y* values of each vertice in a polygon. Comments can be added with \# for reference.
+
 ## Screengrabs
 ![Start](pictures/readme/start.png)
 ![Racing](pictures/readme/racing.png)
