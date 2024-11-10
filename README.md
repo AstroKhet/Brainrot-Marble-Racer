@@ -2,6 +2,12 @@
 
 Characters from the popular show *Spongebob Squarepants* race against each other to the finiish line, but are hindered by immovable obstacles. Who will be the first to reach the finis line?
 
+Made with C++ and [SFML](https://www.sfml-dev.org/) 
+
+AI voices produced with [Singify](https://singify.fineshare.com/)
+
+Current song being used in `audio/` is [KSI - Thick Of It](https://youtu.be/At8v_Yc044Y?si=ClZ-Aq1LY8vtuVgQ)
+
 ## Features  
 - Play as popular *Spongebob Squarepants* characters.
 - Dynamic race environment with obstacles that each character must navigate.
