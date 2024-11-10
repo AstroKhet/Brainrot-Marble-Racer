@@ -20,8 +20,8 @@ inline void loadScene(Engine& engine, std::vector<Ball>& balls, std::vector<Poly
     std::uniform_real_distribution<float> distX(-5.0f, 5.0f);
     std::uniform_real_distribution<float> distY(0.0f, 5.0f);
 
-    for (const auto& png_file : std::filesystem::directory_iterator("pictures/144p")) {
-        std::string character = png_file.path().stem().string();
+    for (const auto& pngFile : std::filesystem::directory_iterator("pictures/144p")) {
+        std::string character = pngFile.path().stem().string();
         Ball marble(sf::Vector2f(distX(gen), distY(gen)), character);
         engine.addBall(marble);
     }

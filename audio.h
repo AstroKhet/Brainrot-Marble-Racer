@@ -7,6 +7,7 @@
 #include <cmath>
 #include <thread>
 
+
 class AudioPlayer {
 public:
     sf::Music music;
@@ -47,5 +48,6 @@ public:
     }
 
 };
+
 
 #endif

@@ -7,6 +7,7 @@
 #include <vector>
 #include <limits>
 
+
 class Polygon {
 public:
     std::vector<sf::Vector2f> vertices;

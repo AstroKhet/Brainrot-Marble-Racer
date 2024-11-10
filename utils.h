@@ -5,6 +5,7 @@
 
 #include <cmath>
 
+
 inline float distanceSquared2f(sf::Vector2f a, sf::Vector2f b){
     return (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y);
 }
@@ -12,6 +13,7 @@ inline float distanceSquared2f(sf::Vector2f a, sf::Vector2f b){
 inline float lengthSquared2f(sf::Vector2f a) {
     return a.x * a.x + a.y * a.y;
 }
+
 inline float length2f(sf::Vector2f a){
     return std::sqrt(a.x * a.x + a.y * a.y);
 }
@@ -43,5 +45,6 @@ inline void drawCircle(sf::RenderWindow& window, sf::Vector2f pos, float radius,
     circle.setPosition(pos.x, pos.y);
     window.draw(circle);
 }
+
 
 #endif
