@@ -30,7 +30,6 @@ public:
         sf::Music* audio = new sf::Music;
         audio->openFromFile(getAudioPath(audioName));
         audio->play();
-
         activelyPlaying.push_back(audio);
     }
 
@@ -46,7 +45,6 @@ public:
     std::string getAudioPath(std::string character) {
         return "audio/" + character + ".wav";
     }
-
 };
 
 

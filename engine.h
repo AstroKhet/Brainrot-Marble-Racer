@@ -130,7 +130,6 @@ public:
             float v_n = dot2f(v_rel, n_hat);
             float v_t = dot2f(v_rel, t_hat);
 
-            // Use cross products for angular terms
             float r1cn = cross2f(r1, n_hat);
             float r2cn = cross2f(r2, n_hat);
             float invM_n = 1 / (2/m + (r1cn * r1cn + r2cn * r2cn) / I);
