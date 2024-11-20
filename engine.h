@@ -25,6 +25,8 @@ public:
     sf::View view;
     sf::Font font;
     sf::Vector2f viewVelocity;
+    sf::Texture winnerTexture;
+    sf::Texture bannerTexture;
 
     AudioPlayer& speaker;
 
@@ -43,6 +45,7 @@ public:
         view = window.getView();
         speaker.playAudio("countdown");
         font.loadFromFile("fonts/arial.ttf");
+        bannerTexture.loadFromFile("pictures/winner.png");
     }
 
     void draw(sf::RenderWindow& window, float elapsed_t) {
@@ -70,13 +73,9 @@ public:
 
         // Draw Winner
         if (hasWinner) {
-            sf::Texture outerTexture, innerTexture;
-            outerTexture.loadFromFile("pictures/winner.png");
-            innerTexture.loadFromFile("pictures/" + winner + ".png");
-
             sf::CircleShape bannerCircle(10), winnerCircle(6);
-            bannerCircle.setTexture(&outerTexture);
-            winnerCircle.setTexture(&innerTexture);
+            bannerCircle.setTexture(&bannerTexture);
+            winnerCircle.setTexture(&winnerTexture);
 
             float rotationAngle = (elapsed_t - timeWin) * 180 / M_PI;
 
@@ -268,6 +267,7 @@ public:
             if (ball.position.y - ball.radius < endBannerHeight && !hasWinner) {
                 hasWinner = true;
                 winner = ball.character;
+                winnerTexture.loadFromFile("pictures/" + winner + ".png");
                 timeWin = elapsed_t;
                 speaker.playAudio("congratulations");
             }
