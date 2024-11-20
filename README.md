@@ -11,6 +11,7 @@ Current song being used in `audio/` is [KSI - Thick Of It](https://youtu.be/At8v
 ## Features  
 - Play as popular *Spongebob Squarepants* characters.
 - Dynamic race environment with obstacles that each character must navigate.
+- Create your own obstacle courses 
 - Exciting race mechanics to simulate a true race-to-the-finish atmosphere.
 
 
